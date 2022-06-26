@@ -11303,7 +11303,7 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background: url("https://images.squarespace-cdn.com/content/v1/56983541d82d5e518d15d555/1462509108724-T2GVEHY90IIAMDAOAT51/running_kids_header.jpg?format=1500w") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -11347,6 +11347,10 @@ header.masthead h1, header.masthead .h1 {
 .testimonials {
   padding-top: 7rem;
   padding-bottom: 7rem;
+}
+.upcoming-evevnts {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .testimonials .testimonial-item {
   max-width: 18rem;
