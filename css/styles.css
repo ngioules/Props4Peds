@@ -11344,7 +11344,7 @@ header.masthead h1, header.masthead .h1 {
   background-repeat: no-repeat;
   background-position: center;
 }
-}
+
 @media (min-width: 768px) {
   .showcase .showcase-text {
     padding: 7rem;
