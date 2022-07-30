@@ -11338,6 +11338,10 @@ header.masthead h1, header.masthead .h1 {
   min-height: 30rem;
   background-size: cover;
 }
+.showcase .showcase-img2 {
+  min-height: 80rem;
+  background-size: cover;
+}
 @media (min-width: 768px) {
   .showcase .showcase-text {
     padding: 7rem;
