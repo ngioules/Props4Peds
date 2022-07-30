@@ -11330,7 +11330,11 @@ header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
   }
 }
-
+.padding-images{
+  object-fit: contain;
+  max-height: 40rem;
+  padding: 1%;
+}
 .showcase .showcase-text {
   padding: 3rem;
 }
@@ -11340,6 +11344,12 @@ header.masthead h1, header.masthead .h1 {
 }
 .showcase .showcase-img2 {
   min-height: 30rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.showcase .showcase-img3 {
+  min-height: 60rem;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
