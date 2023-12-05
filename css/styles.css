@@ -11402,35 +11402,69 @@ footer.footer {
 }
 
 .rainbow-text span:nth-child(1) { color: red; }
-.rainbow-text span:nth-child(2) { color: orange; }
-.rainbow-text span:nth-child(3) { color: yellow; }
+.rainbow-text span:nth-child(2) { color: green; }
+.rainbow-text span:nth-child(3) { color: red; }
 .rainbow-text span:nth-child(4) { color: green; }
-.rainbow-text span:nth-child(5) { color: blue; }
-.rainbow-text span:nth-child(6) { color: indigo; }
-.rainbow-text span:nth-child(7) { color: violet; }
-.rainbow-text span:nth-child(8) { color: red; }
-.rainbow-text span:nth-child(9) { color: orange; }
-.rainbow-text span:nth-child(10) { color: yellow; }
-.rainbow-text span:nth-child(11) { color: green; }
-.rainbow-text span:nth-child(12) { color: blue; }
-.rainbow-text span:nth-child(13) { color: indigo; }
-.rainbow-text span:nth-child(14) { color: violet; }
+.rainbow-text span:nth-child(5) { color: red; }
+.rainbow-text span:nth-child(6) { color: green; }
+.rainbow-text span:nth-child(7) { color: red; }
+.rainbow-text span:nth-child(8) { color: green; }
+.rainbow-text span:nth-child(9) { color: red; }
+.rainbow-text span:nth-child(10) { color: green; }
+.rainbow-text span:nth-child(11) { color: red; }
+.rainbow-text span:nth-child(12) { color: green; }
+.rainbow-text span:nth-child(13) { color: red; }
+.rainbow-text span:nth-child(14) { color: green; }
 .rainbow-text span:nth-child(15) { color: red; }
-.rainbow-text span:nth-child(16) { color: orange; }
-.rainbow-text span:nth-child(17) { color: yellow; }
+.rainbow-text span:nth-child(16) { color: green; }
+.rainbow-text span:nth-child(17) { color: red; }
 .rainbow-text span:nth-child(18) { color: green; }
-.rainbow-text span:nth-child(19) { color: blue; }
-.rainbow-text span:nth-child(20) { color: indigo; }
-.rainbow-text span:nth-child(21) { color: violet; }
-.rainbow-text span:nth-child(22) { color: red; }
-/* Continue the pattern, cycling through the colors */
+.rainbow-text span:nth-child(19) { color: red; }
+.rainbow-text span:nth-child(20) { color: green; }
+.rainbow-text span:nth-child(21) { color: red; }
+.rainbow-text span:nth-child(22) { color: green; }
 
-@keyframes rainbow-animation {
-  0%,100% { filter: hue-rotate(0deg); }
-  50% { filter: hue-rotate(360deg); }
+@keyframes toggle-color {
+  0%, 100% { color: red; }
+  50% { color: green; }
 }
 
 .rainbow-text span {
-  animation: rainbow-animation 6s ease-in-out infinite;
+  animation: toggle-color 6s ease-in-out infinite;
   display: inline-block;
 }
+/* 
+@keyframes toggle-color {
+  0%, 100% { color: red; }
+  50% { color: green; }
+}
+
+.rainbow-text span {
+  animation: toggle-color 6s ease-in-out infinite;
+  display: inline-block;
+}
+
+/* Apply the animation delay to each span */
+.rainbow-text span:nth-child(1) { animation-delay: 0s; }
+.rainbow-text span:nth-child(2) { animation-delay: 0.2s; }
+.rainbow-text span:nth-child(3) { animation-delay: 0.4s; }
+.rainbow-text span:nth-child(4) { animation-delay: 0.6s; }
+.rainbow-text span:nth-child(5) { animation-delay: 0s; }
+.rainbow-text span:nth-child(6) { animation-delay: 0.2s; }
+.rainbow-text span:nth-child(7) { animation-delay: 0.4s; }
+.rainbow-text span:nth-child(8) { animation-delay: 0.6s; }
+.rainbow-text span:nth-child(9) { animation-delay: 0s; }
+.rainbow-text span:nth-child(10) { animation-delay: 0.2s; }
+.rainbow-text span:nth-child(11) { animation-delay: 0.4s; }
+.rainbow-text span:nth-child(12) { animation-delay: 0.6s; }
+.rainbow-text span:nth-child(13) { animation-delay: 0s; }
+.rainbow-text span:nth-child(14) { animation-delay: 0.2s; }
+.rainbow-text span:nth-child(15) { animation-delay: 0.4s; }
+.rainbow-text span:nth-child(16) { animation-delay: 0.6s; }
+.rainbow-text span:nth-child(17) { animation-delay: 0.6s; }
+.rainbow-text span:nth-child(18) { animation-delay: 0s; }
+.rainbow-text span:nth-child(19) { animation-delay: 0.2s; }
+.rainbow-text span:nth-child(20) { animation-delay: 0.4s; }
+.rainbow-text span:nth-child(21) { animation-delay: 0.6s; }
+.rainbow-text span:nth-child(22) { animation-delay: 0; } */
+/* and so on for each span element */
