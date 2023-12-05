@@ -11400,3 +11400,37 @@ footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
+.rainbow-text span:nth-child(1) { color: red; }
+.rainbow-text span:nth-child(2) { color: orange; }
+.rainbow-text span:nth-child(3) { color: yellow; }
+.rainbow-text span:nth-child(4) { color: green; }
+.rainbow-text span:nth-child(5) { color: blue; }
+.rainbow-text span:nth-child(6) { color: indigo; }
+.rainbow-text span:nth-child(7) { color: violet; }
+.rainbow-text span:nth-child(8) { color: red; }
+.rainbow-text span:nth-child(9) { color: orange; }
+.rainbow-text span:nth-child(10) { color: yellow; }
+.rainbow-text span:nth-child(11) { color: green; }
+.rainbow-text span:nth-child(12) { color: blue; }
+.rainbow-text span:nth-child(13) { color: indigo; }
+.rainbow-text span:nth-child(14) { color: violet; }
+.rainbow-text span:nth-child(15) { color: red; }
+.rainbow-text span:nth-child(16) { color: orange; }
+.rainbow-text span:nth-child(17) { color: yellow; }
+.rainbow-text span:nth-child(18) { color: green; }
+.rainbow-text span:nth-child(19) { color: blue; }
+.rainbow-text span:nth-child(20) { color: indigo; }
+.rainbow-text span:nth-child(21) { color: violet; }
+.rainbow-text span:nth-child(22) { color: red; }
+/* Continue the pattern, cycling through the colors */
+
+@keyframes rainbow-animation {
+  0%,100% { filter: hue-rotate(0deg); }
+  50% { filter: hue-rotate(360deg); }
+}
+
+.rainbow-text span {
+  animation: rainbow-animation 6s ease-in-out infinite;
+  display: inline-block;
+}
